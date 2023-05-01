@@ -27,7 +27,7 @@ public class BookingController {
 
         bookingService.bookBusTicket(bookingDto,busId,cusId);
 
-        return new ResponseEntity<>("Ticket's Booked", HttpStatus.CREATED);
+        return new ResponseEntity<>("Ticket Booked", HttpStatus.CREATED);
     }
 
     @GetMapping
