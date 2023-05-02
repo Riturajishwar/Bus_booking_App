@@ -2,6 +2,7 @@ package com.busticket_booking.controller;
 
 import com.busticket_booking.payload.BookingDto;
 import com.busticket_booking.service.BookingService;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/booking")
+@Api(value = "Bus Booking Service", description = "Ibus Booking Controller ")
 public class BookingController {
 
     private BookingService bookingService;
